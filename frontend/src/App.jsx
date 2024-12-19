@@ -8,28 +8,29 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex h-screen">
+        {/* Left Sidebar */}
+        <div className="bg-blue-500 w-1/4 h-full p-4">
+          <h2 className="text-white text-center">Left Sidebar</h2>
+        </div>
+
+        {/* Right Sidebar */}
+        <div className="bg-green-500 w-1/4 h-full p-4">
+          <h2 className="text-white text-center">Right Sidebar</h2>
+        </div>
+
+        {/* Main Content */}
+        <div className="bg-yellow-500 w-1/2 h-full p-4">
+          <h2 className="text-black text-center">Main Content</h2>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      {/* Popup Element */}
+      <div className="w-11 h-11 bg-red-600 fixed bottom-4 right-4 rounded-full shadow-lg">
+        <p className="text-white text-center mt-14">   </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
 export default App
