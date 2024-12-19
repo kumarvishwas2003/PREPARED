@@ -62,24 +62,10 @@ function App() {
             <div className="h-full flex flex-col">
               <div className="p-4 border-b border-slate-700">
                 <div className="flex items-center justify-between">
-                  <span className="text-slate-300">Commercial Fire</span>
-                  <button className="text-slate-400 hover:text-slate-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
+                  <span className="text-slate-300">Description</span>
                 </div>
               </div>
-              <div className="flex-1 overflow-auto p-4">
+              <div className="flex-1 overflow-auto">
                 <Description />
               </div>
             </div>
@@ -91,36 +77,7 @@ function App() {
               {/* Map placeholder - in real app, you'd integrate a mapping library here */}
               <div className="absolute inset-0 bg-slate-800">
                 {/* Map controls */}
-                <div className="absolute top-4 right-4 flex flex-col space-y-2">
-                  <button className="p-2 bg-white rounded-lg shadow-lg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-slate-700"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                  <button className="p-2 bg-white rounded-lg shadow-lg">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 text-slate-700"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5 10a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </button>
-                </div>
+            
               </div>
             </div>
           </div>
