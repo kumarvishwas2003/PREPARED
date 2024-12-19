@@ -2,7 +2,7 @@ import React from "react";
 
 const Helpline = () => {
   return (
-    <div className="p-4">
+    <div>
       <div className="bg-slate-900 text-white rounded shadow-lg border border-slate-700">
               <div className="flex items-center p-4">
           <div className="flex-none w-8 h-8 bg-red-500 rounded-lg flex items-center justify-center mr-4">
