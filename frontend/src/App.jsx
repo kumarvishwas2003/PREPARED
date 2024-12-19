@@ -8,26 +8,30 @@ function App() {
 
   return (
     <>
-      <div className="flex h-screen">
-        {/* Left Sidebar */}
-        <div className="bg-blue-500 w-1/4 h-full p-4">
-          <h2 className="text-white text-center">Left Sidebar</h2>
-        </div>
-
-        {/* Right Sidebar */}
-        <div className="bg-green-500 w-1/4 h-full p-4">
-          <h2 className="text-white text-center">Right Sidebar</h2>
+      <div className="h-screen flex flex-col">
+        {/* Navbar */}
+        <div className="h-[50px] bg-[#0f233b] border-b border-white flex items-center justify-between px-4">
+          <h1 className="text-white text-lg font-bold">Navbar</h1>
         </div>
 
         {/* Main Content */}
-        <div className="bg-yellow-500 w-1/2 h-full p-4">
-          <h2 className="text-black text-center">Main Content</h2>
-        </div>
-      </div>
+        <div className="flex-1 flex">
+          {/* Left Sidebar */}
+          <div className="bg-[#0f233b] w-1/4 p-4 border-r">
+            <h2 className="text-white text-center">Left Sidebar</h2>
+          </div>
 
-      {/* Popup Element */}
-      <div className="w-11 h-11 bg-red-600 fixed bottom-4 right-4 rounded-full shadow-lg">
-        <p className="text-white text-center mt-14">   </p>
+          <div className="bg-[#0f233b] w-1/4 p-4 border-r">
+            <h2 className="text-white text-center">Right Sidebar</h2>
+          </div>
+
+          {/* Main Section */}
+          <div className="bg-[#0f233b] w-1/2 p-4">
+            <h2 className="text-black text-center">Main Content</h2>
+          </div>
+
+          {/* Right Sidebar */}
+        </div>
       </div>
     </>
   );
